@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Achieve</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sample.css">
+</head>
+<body>
+  <div class="content">
+    <header>
+      <ul>
+        <li class="left"><a href="#">Achieve</a></li>
+        <li class="left"><a href="#">お問い合わせ</a></li>
+        <li class="right"><a href="#">サインアップ</a></li>
+        <li class="right"><a href="#">ログイン</a></li>
+      </ul>
+    </header>
+    <section class="main-header">
+      <div class="">
+      <img src="images/achieve.png">
+      </div>
+
+    </section>
+    <section class="about">
+      <h1>About Achieve</h1>
+      <p>
+        Achieveは、受講生のために作成された、教材用ページです。<br>
+        Achieveを作り終えることで、HTML課題を合格することができます。
+      </p>
+      <p>
+        Acheiveを一言で表すと、タスク管理アプリケーションのトップページのモックアップです。<br>
+        チームメンバーが、今どのタスクを行っているか把握することができる、というアプリケーションの機能を説明をするページです。
+      </p>
+    </section>
+    <section class="function">
+      <h1>Function</h1>
+      <div class="function-images">
+        <div class="function-image">
+          <img src="images/key.png">
+          <p>ログイン機能</p>
+        </div>
+        <div class="function-image">
+          <img src="images/mails.png">
+          <p>メール送信機能</p>
+        </div>
+        <div class="function-image">
+          <img src="images/girls.png">
+          <p>友達つながり機能</p>
+        </div>
+        <div class="function-image">
+          <img src="images/comment.png">
+          <p>コメント投稿機能</p>
+        </div>
+      </div>
+    </section>
+  <footer>
+    <p>運営会社DIVE INTO CODE株式会社<br>
+    © 2015-2018 Copyright DIVE INTO CODE Corp.</p>
+  </footer>
+</div>
+</body>
+</html>
+次に、サンプルサイトの見栄えを良くするために、sample.cssの多くの箇所を修正しました。
+以下は、修正したsample.cssファイルです。
+
+html {
+  min-height: 100%;
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.content {
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+/* aboutクラス指定箇所　ここから */
+h1 {
+  font-size: 1.5rem;
+  margin: 10px auto;
+}
+p {
+  font-size: 0.8rem;
+}
+/* aboutクラス指定箇所　ここまで */
+section {
+  padding: 30px;
+}
+/* ここまでがcommom css実装 */
+
+/* header */
+header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: #2B2B2B;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin: auto;
+}
+header ul li {
+  margin: 0px 10px;
+}
+header ul li:nth-of-type(3) {
+  margin-left: auto;
+}
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* ここまでがheader部分の実装 */
+
+/* main-header */
+.main-header {
+  padding-bottom: 15%;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+.main-header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 13%;
+}
+/* ここまでがmain-header部分の実装 */
+
+/* function */
+.function {
+  background-color: #D3D3D3;
+  padding-bottom: 70px;
+}
+.function-images {
+  display: flex;
+  justify-content: center;
+}
+
+.function-image {
+  margin: 20px;
+}
+/* ここまでがfunction部分の実装 */
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #283A4B;
+  color:#fff;
+}
+
